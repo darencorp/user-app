@@ -1,0 +1,16 @@
+@import "../styles";
+
+.app-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header-container {
+  width: 100%;
+}
+
+.app-body-container {
+  width: 65%;
+}

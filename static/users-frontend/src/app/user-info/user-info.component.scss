@@ -1,0 +1,36 @@
+@import "../../styles";
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5em;
+}
+
+.user-avatar {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.text-info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.user-info-properties {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5em;
+}
+
+.user-info-values {
+  display: flex;
+  flex-direction: column;
+}

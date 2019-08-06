@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.button-default {
+  margin: 0;
+  overflow: visible;
+  font: inherit;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.875em;
+  vertical-align: middle;
+  font-size: 1.875pt;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color, border-color;
+  border: 1px solid #e5e5e5;
+}
+
+/*# sourceMappingURL=styles.css.map */

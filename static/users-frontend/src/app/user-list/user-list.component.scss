@@ -1,0 +1,66 @@
+@import "../../styles";
+
+$user-list-font-size: 0.75em;
+
+.user-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-list-table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  margin-bottom: 1.25em;
+
+  thead {
+    vertical-align: middle;
+  }
+
+  th {
+    padding: 1em 0.75em;
+    text-align: left;
+    vertical-align: bottom;
+    font-size: $user-list-font-size;
+    font-weight: normal;
+    color: $global-muted-text-color;
+    text-transform: uppercase;
+  }
+
+  tbody {
+    vertical-align: middle;
+  }
+
+  tr {
+    border-top: 1px solid $global-default-color;
+  }
+
+  td {
+    padding: 1em 0.75em;
+    vertical-align: top;
+  }
+}
+
+.info-icon {
+  width: 60%;
+  cursor: pointer;
+}
+
+.user-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  padding: 0;
+  list-style: none;
+
+  > * {
+    margin-left: 0.5em;
+    color: $global-muted-text-color;
+    cursor: pointer;
+  }
+
+  .active {
+    color: $global-text-color;
+  }
+}

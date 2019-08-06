@@ -1,0 +1,26 @@
+@import "../../styles";
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.2em;
+  justify-content: center;
+}
+
+.app-header-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app-header-title {
+  width: 41.5%;
+  margin: 0 0 0.7em 0;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #222;
+  text-transform: none;
+  display: block;
+}
+
+

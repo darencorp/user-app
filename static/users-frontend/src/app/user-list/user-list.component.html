@@ -1,0 +1,26 @@
+<div class="user-list-container">
+  <table class="user-list-table">
+    <thead>
+    <th>Id</th>
+    <th class="width-1-4">First Name</th>
+    <th class="width-1-4">Last Name</th>
+    <th class="width-1-2">Email</th>
+    <th class="width-1-10">Info</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of userList">
+      <td>{{user.id}}</td>
+      <td>{{user.first_name}}</td>
+      <td>{{user.last_name}}</td>
+      <td>{{user.email}}</td>
+      <td>
+        <a [routerLink]="['/user', user.id]" routerLinkActive="active"><img class="info-icon"
+                                                               src="assets/img/show-more-button-with-three-dots.png"></a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="user-pagination">
+    <div class="active" *ngFor="let p of pages" [ngClass]="{'active': p == page}" (click)="changePage(p)">{{p}}</div>
+  </div>
+</div>

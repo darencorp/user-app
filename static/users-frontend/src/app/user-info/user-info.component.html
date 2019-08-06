@@ -1,0 +1,19 @@
+<div class="user-info-container" *ngIf="user">
+  <div>
+    <img class="user-avatar" src="{{user.avatar}}">
+  </div>
+  <div class="text-info-container">
+    <div class="user-info-properties">
+      <div>ID:</div>
+      <div>First Name:</div>
+      <div>Last Name:</div>
+      <div>Email:</div>
+    </div>
+    <div class="user-info-values">
+      <div>{{user.id}}</div>
+      <div>{{user.first_name}}</div>
+      <div>{{user.last_name}}</div>
+      <div>{{user.email}}</div>
+    </div>
+  </div>
+</div>
