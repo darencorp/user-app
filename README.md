@@ -43,12 +43,12 @@ Main purpose of that is to serving static files from frontend and pass all reque
 In the project I have made my own class NestableBlueprint to replace Flask Blueprint.
 Unfortunately Flaks's blueprint cannot be nested, so I could not make a nested API.
 
-The first blueprint is using for routing of API versions and tew second - for routing of app modules.
+The first blueprint is using for routing of API versions and thw second - for routing of app modules.
 
-Also I have include there function **.register_view()** to register REST endpoint fot whole MethodView (ViewSet in Django).
+Also I have included there function **.register_view()** to register REST endpoint for whole MethodView (ViewSet in Django).
 That is optional and you could add endpoint to your view via standard function **.add_url_rule()**.
 
-Backend is serving through uWSGI that make code more secure. In the case if amount o requests would grow up - there is
+Backend is serving through uWSGI that make code more secure. And in case if amount of requests would grow up - there is
  possible to create few workers to handle those requests.
 
 #### Frontend:
