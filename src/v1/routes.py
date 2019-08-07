@@ -1,3 +1,7 @@
+"""
+Module to define routing to API v1 modules.
+"""
+
 from src.utils import NestableBlueprint
 from .users.routes import users_blueprint
 

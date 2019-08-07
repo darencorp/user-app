@@ -1,3 +1,9 @@
+"""
+Local API v1 config.
+
+Here is placed things necessary for properly functionality of API v1.
+"""
+
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

@@ -1,3 +1,10 @@
+"""
+Module to define endpoint to app views.
+
+Views could be added to endpoint via blueprint.register_view()
+or just via blueprint.add_url_rule()
+"""
+
 from src.utils import NestableBlueprint
 from .views.user import UserView
 
