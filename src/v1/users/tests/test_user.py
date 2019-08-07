@@ -4,16 +4,16 @@ import unittest
 
 from unittest.mock import patch
 
-from app import app
+from app import APP
 from src.v1.users.tests.utils import UserAPIResponseMock
 
 
 class TestUser(unittest.TestCase):
 
     def setUp(self):
-        app.config['DEBUG'] = False
-        app.testing = True
-        self.client = app.test_client()
+        APP.config['DEBUG'] = False
+        APP.testing = True
+        self.client = APP.test_client()
 
     @patch('src.v1.utils.requests.request')
     def test_should_get_single_user_instance(self, user_api_response):
