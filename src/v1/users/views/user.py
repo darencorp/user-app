@@ -42,7 +42,7 @@ class UserView(MethodView):
         user_list, status = self.user_api.list(page)
         return Response(json.dumps(user_list), status)
 
-    def delete(self, user_id) -> Response:
+    def delete(self, user_id: int) -> Response:
         """
         Function to delete user instance by its id.
         :param user_id:
@@ -51,7 +51,7 @@ class UserView(MethodView):
         data, status = self.user_api.delete(user_id)
         return Response(json.dumps(data), status)
 
-    def put(self, user_id) -> Response:
+    def put(self, user_id: int) -> Response:
         """
         Function to update user instance based on its id.
         :param user_id:

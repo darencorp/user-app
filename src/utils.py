@@ -42,7 +42,7 @@ class NestableBlueprint(Blueprint):
          GET for single instance
          POST to create instance
          PUT to update instance
-         DELETE to delete instnce
+         DELETE to delete instance
 
         :param view: MethodView instance
         :param url: endpoint URL
