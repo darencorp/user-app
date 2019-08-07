@@ -27,19 +27,19 @@ There are few ways to install and test application:
     6. npm i
     7. npm i -g @angular/cli
     8. ng serve
-    9. Open browser on localhost:4200
+    9. Open browser on localhost:4200 # run frontend
     
     
 ## Description:
 
-#####Deployment:
+#### Deployment:
 I have put a project into docker container.
 So it could be easily integrated with Cloud Systems such as AWS, Azure or Google Cloud.
 
 Also there is Nginx as a proxy server.
 Main purpose of that is to serving static files from frontend and pass all request to backend API.
 
-#####Backend:
+#### Backend:
 In the project I have made my own class NestableBlueprint to replace Flask Blueprint.
 Unfortunately Flaks's blueprint cannot be nested, so I could not make a nested API.
 
@@ -51,7 +51,7 @@ That is optional and you could add endpoint to your view via standard function *
 Backend is serving through uWSGI that make code more secure. In the case if amount o requests would grow up - there is
  possible to create few workers to handle those requests.
 
-#####Frontend:
+#### Frontend:
 For a frontend I have choice Angular mostly because I have more experience with that.
 I think that React would be better for as small project as that. 
 But otherwise it this project would grow up - Angular would be a better choice.
